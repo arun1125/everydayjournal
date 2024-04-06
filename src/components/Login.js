@@ -55,13 +55,13 @@ export default function Login() {
 
         <div className="input input-bordered flex items-center gap-2 w-full max-w-[40ch]">
           <i className="fa-solid fa-envelope"/>
-          <input type="text" className="grow bg-gray-100 text-slate-900" placeholder="Email" value={email} 
+          <input type="text" className="grow text-gray-100" placeholder="Email" value={email} 
           onChange = {(e) => setEmail(e.target.value)}/>
         </div>
 
         <div className="input input-bordered flex items-center gap-2 w-full max-w-[40ch]">
           <i className="fa-solid fa-key"/>
-          <input type="password" className="grow text-slate-900  bg-gray-100" placeholder='Password' value={password} 
+          <input type="password" className="grow text-gray-100" placeholder='Password' value={password} 
           onChange = {(e) => setPassword(e.target.value)}/>
         </div>
 

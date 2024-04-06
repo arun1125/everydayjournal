@@ -57,13 +57,16 @@ export default function Diaryentry(params) {
             <div className="card-body items-center text-center">
                 <h2 className="card-title">Write what you are grateful for today</h2>
                 {
-                !entry ? <input type="text" placeholder="As simple as the sun or as deep as you want" className="input input-bordered input-md w-full max-w-xs  bg-gray-100 text-slate-900 text-center" 
+                !entry ? <input 
+                type="text" 
+                placeholder="As simple as the sun or as deep the ocean" 
+                className="input input-bordered input-md w-full max-w-xs  bg-gray-100 text-slate-900 text-center" 
                 onChange = {(e) => setGrateful(e.target.value)}/> : 
                 <input 
                 type="text" 
                 placeholder="As simple as the sun or as deep as you want"
                 value = {grateful}
-                className="input input-bordered input-md w-full max-w-xs text-slate-900 text-center" 
+                className="input input-bordered input-md w-full max-w-xs text-slate-900 text-center bg-gray-100 " 
                 onChange = {(e) => setGrateful(e.target.value)}/>
                 }
             </div>

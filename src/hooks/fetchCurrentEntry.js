@@ -28,7 +28,7 @@ export default function useFetchEntry(currentDate) {
             }
         }
         fetchData()
-    }, )
+    }, [])
 
   return (
     {loading, error, entry}

@@ -41,7 +41,7 @@ export default function useFetchAllEntries() {
             }
         }
         fetchData()
-    }, )
+    }, [])
 
   return (
     {loading, error, allEntries}

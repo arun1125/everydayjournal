@@ -148,7 +148,7 @@ export default function Diaryentry(params) {
             }
 
         </div>
-        <button className="btn btn-active w-full" onClick = {()=>{
+        <button className="btn btn-active w-full bg-gray-100" onClick = {()=>{
             handleSubmit()
             router.push('/dashboard')
         }}>Save your work</button>

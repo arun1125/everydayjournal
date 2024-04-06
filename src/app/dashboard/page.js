@@ -40,7 +40,7 @@ export default function Dashboard() {
                 <Link href = {{pathname: "/diaryentry",query: { date: currentDate }}}>
                 <div className="card w-full bg-gray-100 text-slate-900 duration-300 hover:opacity-40 cursor-pointer mb-4">
                     <div className="card-body items-center text-center">
-                        <h2 className="card-title">Write your todays entry</h2>
+                        <h2 className="card-title">Write todays entry</h2>
                         <p>If a dog chews shoes whose shoes does he choose?</p>
                         <div className="card-actions justify-end">
                         <button className="btn bg-slate-900 text-gray-100">Lets go</button>

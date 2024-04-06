@@ -53,13 +53,13 @@ export default function Login() {
         </div>
             }
 
-        <div className="input input-bordered flex items-center gap-2 w-full max-w-[40ch]">
+        <div className="input input-bordered flex items-center gap-2 w-full max-w-[40ch] bg-inherit border border-gray-100">
           <i className="fa-solid fa-envelope"/>
-          <input type="text" className="grow text-gray-100" placeholder="Email" value={email} 
+          <input type="text" className="grow text-gray-100 " placeholder="Email" value={email} 
           onChange = {(e) => setEmail(e.target.value)}/>
         </div>
 
-        <div className="input input-bordered flex items-center gap-2 w-full max-w-[40ch]">
+        <div className="input input-bordered flex items-center gap-2 w-full max-w-[40ch] bg-inherit border border-gray-100">
           <i className="fa-solid fa-key"/>
           <input type="password" className="grow text-gray-100" placeholder='Password' value={password} 
           onChange = {(e) => setPassword(e.target.value)}/>

@@ -32,14 +32,14 @@ export default function Diaryentry(params) {
     }, [entry])
 
   const userInput = {
-      grateful,
-      goal1,
-      goal2,
-      goal3,
-      day
+      grateful: grateful? grateful : '',
+      goal1: goal1? goal1 : '',
+      goal2: goal2? goal2 : '',
+      goal3: goal3? goal3 : '',
+      day: day? day : ''
   }
 
-  async function handleSubmit(){
+  async function handleSubmit(){    
     const userRef = doc(db, 'users', currentUser.uid)
     await setDoc(userRef, {[currentDate]: userInput}, { merge: true })
   }
@@ -150,7 +150,7 @@ export default function Diaryentry(params) {
         </div>
         <button className="btn btn-active w-full bg-gray-100" onClick = {()=>{
             handleSubmit()
-            router.push('/dashboard')
+            // router.push('/dashboard')
         }}>Save your work</button>
     </div>
   )

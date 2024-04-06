@@ -14,7 +14,7 @@ export default function Header() {
         <div className="navbar bg-inherit text-gray-100 justify-between">
             <div className="navbar bg-inherit">
                 <div className="flex-1">
-                <Link href="/"><a className="btn btn-ghost text-xl">Everyday Seeker</a></Link>
+                <Link href="/" className="btn btn-ghost text-xl">Everyday Seeker </Link>
                 </div>
                 <div className="flex-none">
                     <ul className="menu menu-horizontal">

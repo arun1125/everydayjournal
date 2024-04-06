@@ -69,7 +69,7 @@ export default function Login() {
         className="btn btn-neutral duration-300 hover:opacity-40 cursor-pointer"
         onClick = {submitHandler}
         >
-          Sign in
+          {!isLogin ? 'Sign Up' : 'Log in'}
         </button>
         <h2 className="mb-5 text-xl font-bold duration-300 hover:opacity-40 cursor-pointer" 
         onClick = {()=>{setIsLogin(!isLogin)}}> 

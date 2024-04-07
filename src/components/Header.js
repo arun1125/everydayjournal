@@ -25,10 +25,12 @@ export default function Header() {
                         </summary>
                         <ul className="p-2 bg-gray-100 text-slate-900 z-10 sm:bg-inherit sm:text-gray-100 rounded-t-none sm:text-l text-left">
                             <li><Link href="/dashboard">Dashboard</Link></li>
+                            <li><Link href="/goalhome">GoalTracker</Link></li>
                             <li onClick = {() => {
                                 logout()
                                 router.push('/')
                             }}><a>Sign Out</a></li>
+                            
                         </ul>
                         </details>
                     </li>

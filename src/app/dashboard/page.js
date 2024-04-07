@@ -18,6 +18,8 @@ export default function Dashboard() {
         router.push('/')
     }
 
+    console.log(allEntries)
+
   return (
     <div className = 'flex flex-col items-center'>
         <Header/>
@@ -52,7 +54,7 @@ export default function Dashboard() {
                     return (
                         
                         <div key={index} className="card w-full bg-slate-700 text-gray-100 duration-100 hover:opacity-40 cursor-pointer mb-4">
-                            <Link href = {{pathname: "/diaryentry",query: { date: currentDate }}}>
+                            <Link href = {{pathname: "/diaryentry",query: { date: Object.keys(key)[0] }}}>
                             <div className="card-body items-center text-center">
                                 <h2 className="card-title">{Object.keys(key)[0]}</h2>
                                 <p>{key[Object.keys(key)[0]]['grateful']}</p>
